@@ -55,7 +55,7 @@ jobs:
         - docker-compose build
         - "TYPE=${TRAVIS_TAG##*/}"
         - "[ ! '$TYPE' = 'release' ] || TYPE='patch'"
-        - dappnodesdk publish ${TYPE} -p infura -a $DEV
+        - dappnodesdk publish ${TYPE} --eth_provider infura --ipfs_provider http://138.68.106.96:5001 -a $DEV
       node_js:
         - "10.15.3"
       before_deploy:
