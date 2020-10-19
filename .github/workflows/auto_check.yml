@@ -8,6 +8,7 @@ jobs:
   bump-upstream:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
       - uses: dappnode/dnp-bump-upstream-action@v1
         with:
           upstream_repo: ipfs/go-ipfs
