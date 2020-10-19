@@ -11,6 +11,4 @@ jobs:
       - uses: actions/checkout@v2
       - uses: dappnode/dnp-bump-upstream-action@v1
         with:
-          upstream_repo: ipfs/go-ipfs
-          upstream_varnames: UPSTREAM_VERSION
           github_token: ${{ secrets.GITHUB_TOKEN }}
