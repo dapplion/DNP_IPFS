@@ -13,3 +13,4 @@ jobs:
         with:
           upstream_repo: ipfs/go-ipfs
           upstream_varnames: UPSTREAM_VERSION
+          github_token: ${{ secrets.GITHUB_TOKEN }}
