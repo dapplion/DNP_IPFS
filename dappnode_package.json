@@ -2,7 +2,7 @@
   "name": "ipfs.dnp.dappnode.eth",
   "version": "0.2.11",
   "upstreamVersion": "v0.6.0",
-  "description": "Dappnode package responsible for providing IPFS connectivity",
+  "description": "Dappnode package responsible for providing IPFS connectivity - nonce=1",
   "type": "dncore",
   "architectures": ["linux/amd64", "linux/arm64"],
   "author": "DAppNode Association <admin@dappnode.io> (https://github.com/dappnode)",
