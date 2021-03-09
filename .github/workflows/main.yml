@@ -2,7 +2,7 @@ name: "Main"
 on:
   workflow_dispatch:
     inputs:
-      logLevel:
+      releaseType:
         description: 'Release type (patch / minor / major)'     
         required: true
         default: 'patch'
@@ -42,7 +42,7 @@ jobs:
         with:
           node-version: "10.x"
       - name: Publish
-        run: npx @dappnode/dappnodesdk publish ${{ github.event.inputs.logLevel }} --dappnode_team_preset
+        run: npx @dappnode/dappnodesdk publish ${{ github.event.inputs.releaseType }} --dappnode_team_preset
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           DEVELOPER_ADDRESS: "0xf35960302a07022aba880dffaec2fdd64d5bf1c1"
